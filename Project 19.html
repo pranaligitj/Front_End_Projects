@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #parent{
+            width: 1500px;
+            height: 700px;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        #child1{
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid; */
+            display: flex;
+            align-items: center;
+        }
+        #search{
+           width: 900px;
+           height: 40px;
+           border: 1px solid;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+        }
+        #logo{
+            height: 100%;
+            width: 100px;
+            /* border: 1px solid; */
+            margin: 20px;
+            background-image: url(../Projects/hp/Logo_1_do.jpeg);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        
+        }
+        #child2{
+            width: 100%;
+            height: 70px;
+            /* border:1px solid; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #navbar{
+            width: 1100px;
+            height: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .button a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        .button a:hover{
+            color:blue;
+        }
+        .icon{
+            width: 40px;
+            height: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon a{
+            font-size:30px;
+            color: black;
+        }
+        #child3{
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            width: 450px;
+            height: 500px;
+            /* border: 1px solid; */
+        }
+        .img{
+            width:100%;
+            height: 70%;
+            /* border: 1px solid; */
+        }
+        .data{
+            width: 100%;
+            height: 30%;
+            /* border: 1px solid; */
+            text-align: start;
+            font-size: larger;
+        }
+        .data a{
+            text-decoration: none;
+            color: blue;
+        }
+        .img{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #offer{
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="child1">
+            <div id="logo"></div>
+            <div id="search">
+            <div><input type="search" style="width:850px; height:30px; font-size: 20px; outline:none; border:none;" placeholder="What are you looking for?"></div><div><i class="fa fa-search" aria-hidden="true" style="font-size:30px;"></i></div>
+           </div>
+           <br><br>
+        </div>
+        <div class="child" id="child2">
+            <div id="navbar">
+                <div class="button" id="button1"><a href="">Business</a></div>
+                <div class="button" id="button2"><a href="">Solutions</a></div>
+                <div class="button" id="button3"><a href="">Laptops</a></div>
+                <div class="button" id="button4"><a href="">Desktops</a></div>
+                <div class="button" id="button5"><a href="">Printers</a></div>
+                <div class="button" id="button6"><a href="">Ink & Tonner</a></div>
+                <div class="button" id="button7"><a href="">Moniters</a></div>
+                <div class="button" id="button8"><a href="">Accessories</a></div>
+                <div class="button" id="button9"><a href="">Care Pack</a></div>
+                <div class="button" id="button10"><a href="" style="color:red;">Sale</a></div>
+                <div class="button" id="button11"><a href="">Rech Takes</a></div>
+                <div class="button" id="button12"><a href="">Support</a></div>
+            </div>
+            <div style="height: 100%; width: 200px; display: flex;flex-flow: column; ">
+                <span style="font-size:large;">Sale:1800-419-4962</span>
+                <div style="width: 100%; height: 40px; display: flex; justify-content: space-evenly;">
+                <div class="icon" id="icon1"><a href=""><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+                <div class="icon" id="icon2"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                <div class="icon" id="icon3"><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a></div>
+                <div class="icon" id="icon4"><a href=""><i class="fa fa-user-o" aria-hidden="true"></i></a></div>
+            </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="child" id="child3">
+            <div class="box" id="box1">
+                <div class="img" style="background-image:url(../Projects/hp/computer-4146579_1920.jpg);">
+                    <div id="offer">Save up to<h2>5000*</h2></div>
+                </div>
+                <div class="data">
+                    <h3>Latest & Greatest 2022</h3>
+                    The best HP laptops for you
+                    <br>
+                    <br>
+                    <a href="">SHOW NOW <i class="fa fa-angle-right" aria-hidden="true" style="font-size:larger;"></i></a>
+                </div>
+            </div>
+            <div class="box" id="box2">
+                <div class="img" style="background-image:url(../Projects/hp/laptop-154091_1280.png);"></div>
+                <div class="data">
+                    <h3>LIMITED PERIOD OFFER</h3>
+                    Free Accessories with select ZBook purcheses
+                    <br>
+                    <br>
+                    <a href="">SHOW NOW <i class="fa fa-angle-right" aria-hidden="true" style="font-size:larger;"></i></a>
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="img" style="background-image:url(../Projects/hp/print-159336_1280.png);"></div>
+                <div class="data">
+                    <h3>DesignJet Printers</h3>
+                    Easy printing with free Ink and Warranty
+                    <br>
+                    <br>
+                    <a href="">SHOW NOW <i class="fa fa-angle-right" aria-hidden="true" style="font-size:larger;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

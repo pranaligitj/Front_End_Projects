@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #box1{
+        width: 100px;
+        height: 100px;
+        /* border:1px solid; */
+        background-image:url(../new-img/pizza-5991179_1280.png);
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        border-radius:100%;
+        margin-left:20px;
+        margin-top: 20px;
+       
+    }
+    #parent{
+        width:480px;
+        height: 600px;
+        border:1px solid;
+        margin:0 auto;
+        background-color: rgb(0, 255, 255);
+        box-shadow:6px 6px 6px gray;
+    }
+    .b{
+        display: flex;
+        justify-content: right;
+        margin-right:100px;
+        padding:0.5%;
+    }
+    div a{
+        padding:10px;
+        border:1px solid;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: larger;
+        color:brown;
+        background-color:#f7e9d9;
+        box-shadow:5px 5px 5px gray;
+    }
+    #box2{
+        font-size:35px;
+        margin-left:35%;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div id="parent">
+    <div>
+    <div class="box" id="box1">
+    </div>
+    <b><div class="box" id="box2">Pizza Form</div></b>
+    <div class="box" id="box3">
+        <fieldset><legend>Personal Info</legend>
+        <div class="b" id="b1"><label for="F">First Name:</label><input type="text" id="F" style="width:250px;"></div>
+        <div class="b" id="b2"><label for="L">Last Name:</label><input type="text" id="L" style="width: 250px;"></div>
+        <div class="b" id="b3"><label for="P">Phone:</label><input type="number" id="P" style="width: 250px;">
+        </fieldset>
+        </div>
+    </div>
+    <div class="box" id="box4">
+        <fieldset><legend>Pizza</legend>
+        <div style="font-size:18px;">Size:</div>
+        <div>
+            <input type="checkbox"> <label for="">Small</label>
+            <br>
+            <input type="checkbox"> <label for="">Medium</label>
+            <br>
+            <input type="checkbox"> <label for="">Large</label>
+        </div>
+        <br>
+        <div style="font-size:20px;">Toppings (check all the apply):</div>
+        <div>
+            <input type="checkbox"><label for="">Extra cheese</label>
+            <input type="checkbox"><label for="">Pepperroni</label>
+            <input type="checkbox"><label for="">Sausage</label>
+            <input type="checkbox"><label for="">Mushrooms</label>
+            <input type="checkbox"><label for="">Black olives</label>
+            <input type="checkbox"><label for="">Green Peppers</label>
+            <input type="checkbox"><label for="">Tomatos</label>
+            <input type="checkbox"><label for="">Onions</label>
+            <input type="checkbox"><label for="">Anchovies</label>
+        </fieldset>
+        </div>
+        <div style="display:flex; justify-content:center; align-items:center; margin-top:30px;">
+            <a href="#">Enter my information</a>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

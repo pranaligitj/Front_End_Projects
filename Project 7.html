@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 700px;
+            height: 600px;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:0 auto;
+            background-color: 
+            
+        }
+        #child{
+            /* margin: 0 auto; */
+            border: 2px solid black;
+            font-size:22px;
+            text-align: center;
+            background-color: rgb(204, 204, 217);
+        }
+    </style>
+</head> 
+<body>
+    <h1 style="colo;">this is h1</h1>
+    <div id="parent">
+    <table border="1px solid" id="child" cellspacing="2" cellpadding="20">
+        <tr style="background-color:rgb(39, 39, 82); color: white;">
+            <th colspan="2" >Subject</th>
+            <!-- <th >2</th> -->
+            <th>John Doe</th>
+            <th>Mirium Luther</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td rowspan="2">Biology</td>
+                <td style="background-color:red;">Practical</td>
+                <td style="background-color:deeppink;">A</td>
+                <td style="background-color:red;">A</td>
+            </tr>
+            <tr>
+                <!-- <td >9</td> -->
+                <td style="background-color:deeppink;">Theory</td>
+                <td style="background-color:red;">A+</td>
+                <td style="background-color: deeppink;">A</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color:red;">Chemistry</td>
+                <td>Practical</td>
+                <td style="background-color:deeppink;">B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <!-- <td>17</td> -->
+                <td>Theory</td>
+                <td>A</td>
+                <td style="background-color:deeppink;">C+</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Physics</td>
+                <td style="background-color:red;">Practical</td>
+                <td style="background-color:deeppink;">A</td>
+                <td style="background-color:red;">A</td>
+            </tr>
+            <tr>
+                <!-- <td>25</td> -->
+                <td>Theory</td>
+                <td style="background-color:red;">A-</td>
+                <td>A-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #parent{
+            width: 600px;
+            height: 700px;
+            border:1px solid;
+            margin:0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom, green, cyan);
+        }
+        #child1{
+            width: 80%;
+            height: 80%;
+            border:1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:20px;
+            box-shadow:5px 5px 5px black;
+            background-color:white;
+            
+        }
+        #child2{
+            width: 70%;
+            height: 70%;
+            /* border:1px solid;   */
+        }
+        .box{
+            width: 100%;
+            height:35px;
+            /* border:1px solid; */
+            display: flex;
+        }
+        input[type="text"]{
+            width:300px;
+            height:30px;
+            border:none;
+            box-shadow:2px 2px 2px black;
+            font-size: larger;
+        }
+        input[type="email"]{
+            width:300px;
+            height:30px;
+            border:none;
+            box-shadow:2px 2px 2px black;
+            font-size: larger;
+        }
+        input[type="password"]{
+            width:300px;
+            height:30px;
+            border:none;
+            box-shadow:2px 2px 2px black;
+            font-size: larger;
+        }
+        .class{
+            width:350px;
+            height: 100%;
+            /* border:1px solid; */
+            font-size:16px;
+        }
+        #button {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100px; 
+        }
+        #button a{
+            text-decoration: none;
+            padding: 5px 20px 5px 20px;
+            border-radius:40px;
+            font-size:25px;
+            background-color: rgb(19, 196, 196);
+            color:white;
+            box-shadow:2px 2px 2px black;
+        }
+        .icon{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <div id="child2">
+                <b><div style="width: 100%; height: 50px; display: flex; justify-content: center; align-items: center; font-size:30px;">Sign Up</div></b>
+                <div style="width: 100%; height:30px; margin-left:40px;">Please fill in this form to create an account</div>
+                <hr>
+                <div class="box" id="box1">
+                   <div style="width:30px; height:30px;" class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                   <div><input type="text" placeholder="USERNAME"></div> 
+                </div>
+                <div class="box" id="box2">
+                    <div style="width: 30px; height:30px;" class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div><input type="email" placeholder="E-M@IL"></div>
+                </div>
+                <div class="box" id="box3">
+                    <div style="width: 30px; height:30px;" class="icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+                    <div><input type="password" placeholder="PASSWORD"></div>
+                </div>
+                <div class="box" id="box4">
+                    <div style="width: 30px; height:30px;" class="icon"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div><input type="password" placeholder="CONFIRM PASSWORD"></div>
+                </div>
+                <div class="box" id="box5">
+                    <div class="class" style="width:40px;"><input type="checkbox"></div>
+                    <div class="class" style="width:400px;">I accept the<a href="" style="color:red;">Terms of use</a></div>
+                    <div class="class">&<a href="" style="color:red;">Privacy Policy</a></div>
+                </div>
+                <div id="button"><a href="#">Sign Up</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

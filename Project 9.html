@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #parent{
+            width: 1300px;
+            height: 700px;
+            border:1px solid;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(149, 73, 219);
+        }
+        .box{
+            width: 500px;
+            height: 80%;
+            border:1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child{
+            width: 80%;
+            height: 80%;
+            /* border:1px solid; */
+        }
+        .c{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid; */
+        }
+        .b{
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid; */
+        }
+        #a{
+            font-size:40px;
+            color: rgb(28, 69, 135);
+        }
+        #b{
+            font-size: 40px;
+            color: rgb(0, 255, 255);
+        }
+        #c3{
+            border-bottom:2px solid black;
+            outline: none;
+            border: none;
+        }
+        input[type="text"]{
+            width: 100%;
+            height: 30px;
+            outline: none;
+            border:none;
+            border-bottom:2px solid blue;
+            font-size: 20px;
+            color: blue;
+            opacity: 0.6;
+        }
+        input[type="password"]{
+            width: 100%;
+            height: 30px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid blue;
+            font-size: 20px;
+        }
+        #c6 a{
+            padding: 6px 30px 6px 30px;
+            border: 1px solid;
+            text-decoration: none;
+            border-radius:20px;
+            background-color:rgb(73, 218, 37);
+            color: white;
+        }
+        #box1{
+            background-image: url(../new-img/woman-4246954_1920.jpg);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity:0.7;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box" id="box1">
+            <div class="child" style="display:flex; flex-flow: column wrap; color: white;" id="child1">
+                <div class="b" id="b1" style="font-size:100px; height:230px;">Hello World</div>
+                <div class="b" id="b2">Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Nesciunt, laboriosam.</div>
+                <div class="b" id="b3" style="padding-top:25px;">Login with social media</div>
+                <div class="b" id="b4" style="display:flex; justify-content:space-evenly;">
+                <div><i class="fa fa-facebook-official" aria-hidden="true" id="a"></i></div>
+                <div><i class="fa fa-twitter-square" aria-hidden="true" id="b"></i></div>
+            </div>
+            </div>
+        </div>
+        <div class="box" id="box2" style="background-color:white;">
+            <div class="child" style="display:flex; flex-flow:column wrap;background-color:white;">
+                <div class="c" id="c1" style="font-size:30px;">Login</div>
+                <div class="c" id="c2" style="color:blue;">Don't have an account? Create your account it takes less than a minute</div>
+                <div class="c" id="c3"><input type="text"></div>
+                <div class="c" id="c4"><input type="password"></div>
+                <div class="c" id="c5" style="display:flex; justify-content:space-between;">
+                <div><input type="checkbox"><label for="">Remember Me</label></div>
+                <div><a href="">Forget Password?</a></div></div>
+                <div class="c" id="c6" style="display:flex; justify-content:end; align-items:center;"><a href="#">Login</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
